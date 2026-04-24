@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
 import assets from './assets/assets'
+
 
 const App = () => {
   const [theme, settheme] = useState(() => {
@@ -24,7 +26,9 @@ const App = () => {
   return (
     <div className='dark:bg-black relative'>
       <Navbar theme={theme} settheme={settheme} assets={assets} />
+      <Hero />
     </div>
+   
   )
 }
 

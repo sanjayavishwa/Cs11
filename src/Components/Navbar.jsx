@@ -42,7 +42,7 @@ const Navbar = ({ theme, settheme, assets = defaultAssets }) => {
         <div className="flex items-center gap-3">
           <button
             onClick={handleMenuAction}
-            className="sm:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+            className=" sm:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
             aria-label="Toggle navigation menu"
           >
             <img
@@ -67,7 +67,7 @@ const Navbar = ({ theme, settheme, assets = defaultAssets }) => {
       </div>
 
       <div
-        className={`sm:hidden absolute left-4 top-full mt-4 w-[calc(100vw-2rem)] max-w-1/2 rounded-2xl border border-gray-200 bg-white/95 shadow-xl dark:border-gray-700 dark:bg-gray-800 transition-all ${
+        className={`sm:hidden absolute left-4 top-full mt-4 w-[calc(100vw-2rem)] max-w-2/5 rounded-2xl border border-gray-200 bg-white/95 shadow-xl dark:border-gray-700 dark:bg-gray-800 transition-all ${
           menuOpen ? 'block' : 'hidden'
         }`}
       >
